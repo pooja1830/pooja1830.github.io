@@ -18,7 +18,7 @@
   <meta property="og:image" content="https://iampoojatheauditor.com/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Favicon (shield-check monogram) -->
+  <!-- Favicon (gold brilliant-cut diamond) -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
   <!-- Fonts -->
@@ -66,6 +66,7 @@
   <main id="top">
     <!-- ============ HERO ============ -->
     <section class="hero">
+      <canvas id="facets" aria-hidden="true"></canvas>
       <div class="container hero__inner">
         <div class="hero__content">
           <p class="hero__eyebrow reveal">IT Audit · Risk · Compliance &nbsp;•&nbsp; ServiceNow &nbsp;•&nbsp; Applied AI</p>
@@ -96,13 +97,11 @@
 
         <div class="hero__media reveal">
           <figure class="portrait">
-            <!-- Swap in your photo: save it as pooja.jpg and this shows automatically -->
             <img src="pooja.jpg" alt="Pooja Singh" class="portrait__img"
                  onload="this.nextElementSibling.style.display='none';"
                  onerror="this.style.display='none';" />
-            <div class="portrait__placeholder" role="img" aria-label="Photo placeholder">
+            <div class="portrait__placeholder" role="img" aria-label="Pooja Singh">
               <span class="portrait__mono">PS</span>
-              <span class="portrait__hint">Your photo goes here<br>(pooja.jpg)</span>
             </div>
             <figcaption class="portrait__badge">
               <span class="dot dot--live"></span>Open to full-time roles
@@ -145,7 +144,14 @@
           <!-- Card 1 — A bit about me (feature card) -->
           <div class="pcard pcard--feature reveal">
             <div class="pcard__head">
-              <span class="pcard__icon" aria-hidden="true">🙋‍♀️</span>
+              <span class="pcard__icon" aria-hidden="true"><!-- brilliant-cut diamond: one gem, many facets -->
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+                  <path d="M6.5 12.5 16 3.5l9.5 9L16 28.5 6.5 12.5Z"/>
+                  <path d="M6.5 12.5h19"/>
+                  <path d="M11.2 12.5 16 3.5l4.8 9"/>
+                  <path d="M11.2 12.5 16 28.5l4.8-16"/>
+                </svg>
+              </span>
               <h4>A bit about me</h4>
             </div>
             <div class="pcard__text">
@@ -162,10 +168,15 @@
             </div>
           </div>
 
-          <!-- Cards 2 & 3 — still to complete in our Q&A -->
           <div class="about__pgrid">
             <div class="pcard reveal">
-              <span class="pcard__icon" aria-hidden="true">🎨</span>
+              <span class="pcard__icon" aria-hidden="true"><!-- sparkling gem: craft & creativity -->
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+                  <path d="M16 7.5 22.5 16 16 24.5 9.5 16 16 7.5Z"/>
+                  <path d="M16 12.2 19.6 16 16 19.8 12.4 16 16 12.2Z"/>
+                  <path d="M16 2.6v2.4M16 27v2.4M2.6 16h2.4M27 16h2.4"/>
+                </svg>
+              </span>
               <h4>Hobbies &amp; interests</h4>
               <p>Away from the screen, I'm happiest making something with my hands — tending my flowers and
                 succulents, cooking and experimenting until a dish is just right, and losing myself in
@@ -178,7 +189,13 @@
                 &ldquo;inventory,&rdquo; even scheduling when I water the plants.</p>
             </div>
             <div class="pcard reveal">
-              <span class="pcard__icon" aria-hidden="true">🏡</span>
+              <span class="pcard__icon" aria-hidden="true"><!-- gem cluster: family held together -->
+                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+                  <path d="M9.5 5.5 14.5 12 9.5 18.5 4.5 12 9.5 5.5Z"/>
+                  <path d="M22.5 5.5 27.5 12 22.5 18.5 17.5 12 22.5 5.5Z"/>
+                  <path d="M16 15.5 20.5 21.5 16 27.5 11.5 21.5 16 15.5Z"/>
+                </svg>
+              </span>
               <h4>Family &amp; values</h4>
               <p>Family is my anchor. I come from humble beginnings, and that's given me a deep gratitude for
                 every opportunity and everything new I get to learn. I try to live by a simple compass —
@@ -190,10 +207,10 @@
           </div>
         </div>
 
-        <!-- ---- Personal photo gallery (drop photos in /assets) ---- -->
+        <!-- ---- Personal photo gallery ---- -->
         <div class="about__gallery">
           <h3 class="subhead reveal">A few moments</h3>
-          <p class="subhead__note reveal">Click any photo to enlarge · add your own as <code>moment-1.jpg</code>, <code>moment-2.jpg</code>, <code>moment-3.jpg</code></p>
+          <p class="subhead__note reveal">Click any photo to enlarge</p>
           <div class="gallery reveal">
             <figure class="gallery__item">
               <img src="moment-1.jpg" alt="Pooja with her husband and son on a snowy tubing day" data-lightbox
@@ -373,12 +390,6 @@
             copyrighted scenarios are shown as short summaries in my own words.</p>
         </div>
 
-        <!--
-          HOW TO USE A PROJECT CARD:
-          • Cover image  → drop a file in /assets and set the <img src>. Leave it and the styled placeholder shows.
-          • PDF          → put the paper in /assets and set href; then remove class "is-todo".
-          • GitHub / Demo→ set href to your repo / live URL, then remove class "is-todo".
-        -->
         <div class="projects">
 
           <!-- GRC · IT Audit & Risk -->
